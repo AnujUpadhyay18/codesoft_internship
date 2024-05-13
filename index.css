@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+
+    background-color:blanchedalmond;
+}
+.heading{
+    text-align: center;
+    color: rgba(218, 87, 0, 0.877);
+    margin-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.body_box{
+    height: 60vh;
+    width: 30%;
+    margin: 1rem auto;
+    margin-left: 25rem;
+    border: 2px solid black;
+    
+}
+.screen{
+    
+    height: 4rem;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: right;
+}
+.buttons{
+    display: grid;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 12px;
+    border: none;
+}
+
+.div,button{
+
+    border: 1px solid black;
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.buttons> button:hover{
+    background-color: rgba(218, 87, 0, 0.877);
+    cursor: pointer;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#display{
+    margin-top: 2rem;
+}
+@media (max-width:600px) {
+    .body_box,
+    .buttons,
+    .screen{
+        margin-left: 5% ;
+        width:90%;
+        box-sizing: border-box;
+        height:95%;
+    }
+    .buttons{
+        margin-top: 5rem;
+    }
+}
